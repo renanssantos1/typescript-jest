@@ -1,5 +1,5 @@
-describe('Primitive values', () => {
-  it('should test jest assertions', () => {
+describe("Primitive values", () => {
+  it("should test jest assertions", () => {
     const number = 10;
 
     expect(number).toBeLessThan(11);
@@ -10,10 +10,10 @@ describe('Primitive values', () => {
 
     expect(number).not.toBeNull();
 
-    expect(number).toHaveProperty('toString');
+    expect(number).toHaveProperty("toString");
   });
 
-  it('should split tests', () => {
+  it("should split tests", () => {
     const number = 10;
 
     expect(number).toBe(10);
@@ -27,16 +27,16 @@ describe('Primitive values', () => {
   });
 });
 
-describe('Objects', () => {
-  it('should test jest assertions with objects', () => {
-    const person = { name: 'Luiz', age: 30 };
+describe("Objects", () => {
+  it("should test jest assertions with objects", () => {
+    const person = { name: "Luiz", age: 30 };
     const anotherPerson = { ...person };
 
     expect(person).toEqual(anotherPerson);
-    expect(person).toHaveProperty('age');
-    expect(person).not.toHaveProperty('lastName');
-    expect(person).toHaveProperty('age', 30);
+    expect(person).toHaveProperty("age");
+    expect(person).not.toHaveProperty("lastName");
+    expect(person).toHaveProperty("age", 30);
 
-    expect(person.name).toBe('Luiz');
+    expect(person.name).toBe("Luiz");
   });
 });

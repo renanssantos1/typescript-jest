@@ -22,11 +22,7 @@ const noDiscount = new NoDiscount();
 const shoppingCart = new ShoppingCart(noDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
-// const individualCustomer = new IndividualCustomer(
-//   'Luiz',
-//   'Miranda',
-//   '111.111.111-11',
-// );
+
 const enterpriseCustomer = new EnterpriseCustomer(
   'Empresa Gigante',
   '2222222222222222',
